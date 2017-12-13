@@ -1,23 +1,26 @@
 # Orange-Game-Development
 
 ## Rules
-For this project we have decided to use the following linters:
+For this project we have decided to use the following linters: <br>
 ``linter-htmlhint`` <br>
 ``linter-csslint``<br>
 ``linter-js-standard``<br>
 
-## Test
-
-### Test
+## Here is an example of how we use indentation in:
 
 
-``apm install atom-beautify`` <br>
-``npm install standard --global`` <br>
-``apm install linter-htmlhint`` <br>
-``apm install linter-csslint``<br>
-``apm install linter-js-standard``<br>
+#### HTML
+``footer {``<br>
+``  display: none;``<br>
+``}``
 
 
+``<ul id="dropdownmenu">``<br>
+``  <li>``<br>
+``    <a href="index.html">Hem</a>``<br>
+``  </li>``
+
+#### CSS
 ``footer {``<br>
 ``  display: none;``<br>
 ``}``
