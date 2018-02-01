@@ -10,12 +10,14 @@ class App extends Component {
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <img src={bomb} className="App-logo" alt="logo" />
-          <h1 className="App-title">Survival of the Fastest</h1>
+          <h1 className="App-title">SURVIVAL OF THE FASTEST</h1>
         </header>
         <p className="App-intro">
-          Start Game Here.
+          <a href="https://orange-dev.duckdns.org:8080/"><code>START GAME</code></a>
         </p>
-        <a href="https://orange-dev.duckdns.org:8080/"><code>START GAME</code></a>
+        <p className="App-intro">
+          <a href="https://orange-dev.duckdns.org:8080/"><code>JOIN GAME</code></a>
+        </p>
       </div>
     );
   }
