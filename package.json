@@ -1,0 +1,21 @@
+{
+  "name": "leaderboard",
+  "version": "1.0.0",
+  "description": "leaderboard for game",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Svahnen/Orange-Game-Development.git"
+  },
+  "author": "team orange",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Svahnen/Orange-Game-Development/issues"
+  },
+  "homepage": "https://github.com/Svahnen/Orange-Game-Development#readme"
+}
