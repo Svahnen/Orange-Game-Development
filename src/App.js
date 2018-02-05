@@ -1,60 +1,68 @@
 import React, { Component } from 'react'
-// import logo from './logo.svg';
 import bomb from './bomb.png'
 import './App.css'
-// import Table from'./Table.js'
 
-function Table(props) {
-  return <div className="Table">
-    <h1>1</h1> <h2>23:55</h2> <p>TEAM ORANGE</p> </div>
-
-}
 
 let fakeServerData = {
   team: [
     {
       name: 'Team Orange',
       time: '12:15',
-      placement: '1'
+      ID: '1'
     },
     {
       name: 'Team Pear',
       time: '15:25',
-      placement: '2'
+      ID: '2'
     },
     {
       name: 'Team Melon',
       time: '16:15',
-      placement: '3'
+      ID: '3'
     },
     {
       name: 'Team Grape',
       time: '17:44',
-      placement: '4'
+      ID: '4'
     },
     {
       name: 'Team Banana',
       time: '25:15',
-      placement: '5'
+      ID: '5'
     }
   ]
 
 }
 
 
+
+
+
 class App extends Component {
+
   render() {
+
+
+    // Run throu the fakeServerData object and map out the data in a div. 
+    // Would like to have this in a function to keep render cleaner.
+    const list = fakeServerData.team.map(team => {
+      return(
+        <div key={team.ID} className="Table">
+        <h1>{team.ID}</h1> <h2>{team.time}</h2> <p>{team.name}</p> 
+        </div>
+      )
+    
+    })
+
     return (
       <div className="App">
         <header className="App-header">
           <img src={bomb} className="App-logo" alt="logo" />
           <h1 className="App-title">SURVIVAL OF THE FASTEST</h1>
         </header>
-        <Table />
-        <Table />
-        <Table />
-        <Table />
-        <Table />
+        
+        {list} 
+      
         <p className="App-intro">
           <a href="https://orange-dev.duckdns.org:8080/"><code>START GAME</code></a>
         </p>
