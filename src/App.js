@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import bomb from './bomb.png';
 import './App.css';
 import Table from'./Table.js'
+import Button from'./Button.js'
 
 class App extends Component {
   render() {
@@ -24,6 +24,7 @@ class App extends Component {
         <p className="App-intro">
           <a href="https://orange-dev.duckdns.org:8080/"><code>JOIN GAME</code></a>
         </p>
+        <Button />
       </div>
     );
   }
