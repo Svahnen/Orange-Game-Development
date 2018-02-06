@@ -60,15 +60,15 @@ class App extends Component {
           <img src={bomb} className="App-logo" alt="logo" />
           <h1 className="App-title">SURVIVAL OF THE FASTEST</h1>
         </header>
-        
-        {list} 
-      
         <p className="App-intro">
           <a href="https://orange-dev.duckdns.org:8080/"><code>START GAME</code></a>
         </p>
         <p className="App-intro">
           <a href="https://orange-dev.duckdns.org:8080/"><code>JOIN GAME</code></a>
         </p>
+        {list} 
+      
+        
       </div>
     )
   }
