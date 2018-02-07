@@ -46,7 +46,7 @@ class App extends Component {
     function CompareForSort(first, second) {
       let firstTime = first.time
       let secondTime = second.time
-      if (firstTime == secondTime)
+      if (firstTime === secondTime)
         return 0;
       if (firstTime < secondTime)
         return -1;
@@ -54,11 +54,13 @@ class App extends Component {
         return 1;
     } 
 
+    function fmtMSS(s){return(s-(s%=60))/60+(9<s?':':':0')+s}
+
     // Sorts and then maps server data
     let list = fakeServerData.team.sort(CompareForSort).map(team => {
       return(
         <div key={team.ID} className="Table">
-        <h1>{team.ID}</h1> <h2>{team.time}</h2> <p>{team.name}</p> 
+          <h1>{team.ID}</h1> <h2>{fmtMSS(team.time)}</h2> <p>{team.name}</p> 
         </div>
       )
     })
@@ -75,7 +77,7 @@ class App extends Component {
         <p className="App-intro">
           <a href="https://orange-dev.duckdns.org:8080/"><code>JOIN GAME</code></a>
         </p>
-        
+
         {list} 
       
       
