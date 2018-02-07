@@ -61,7 +61,7 @@ class App extends Component {
     let list = fakeServerData.team.sort(CompareForSort).map(team => {
       return(
         <div key={team.ID} className="Table">
-          <h1>{team.ID}</h1> <h2>{convertToMin(team.time)}</h2> <p>{team.name}</p> 
+          <h2>{team.name}</h2> <h1>{convertToMin(team.time)}</h1>
         </div>
       )
     })
