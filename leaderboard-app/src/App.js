@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import bomb from './bomb.png'
 import './App.css'
+import ButtonStart from './ButtonStart'
+import ButtonJoin from './ButtonJoin'
 
 
 let fakeServerData = {
-  team: [
+ team: [
     {
       time: 1215,
       name: 'Team Strawberry',
@@ -29,9 +31,33 @@ let fakeServerData = {
       time: 2515,
       name: 'Team Banana',
       ID: '5'
+    },
+    {
+      time: 1115,
+      name: 'Team Strawberry',
+      ID: '6'
+    },
+    {
+      time: 2725,
+      name: 'Team Pear',
+      ID: '7'
+    },
+    {
+      time: 1635,
+      name: 'Team Melon',
+      ID: '8'
+    },
+    {
+      time: 1744,
+      name: 'Team Grape',
+      ID: '9'
+    },
+    {
+      time: 2515,
+      name: 'Team Banana',
+      ID: '10'
     }
   ]
-
 }
 
 
@@ -52,8 +78,8 @@ class App extends Component {
         return -1;
       else
         return 1;
-    } 
-  
+    }
+
     // Convert second to minutes and add :
     function fmtMSS(s){return(s-(s%=60))/60+(9<s?':':':0')+s}
 
@@ -61,7 +87,7 @@ class App extends Component {
     let list = fakeServerData.team.sort(CompareForSort).map(team => {
       return(
         <div key={team.ID} className="Table">
-          <h1>{team.ID}</h1> <h2>{fmtMSS(team.time)}</h2> <p>{team.name}</p> 
+          <h2>{team.name}</h2><h1>{fmtMSS(team.time)}</h1>
         </div>
       )
     })
@@ -72,17 +98,12 @@ class App extends Component {
           <img src={bomb} className="App-logo" alt="logo" />
           <h1 className="App-title">SURVIVAL OF THE FASTEST</h1>
         </header>
-        <p className="App-intro">
-          <a href="https://orange-dev.duckdns.org:8080/"><code>START GAME</code></a>
-        </p>
-        <p className="App-intro">
-          <a href="https://orange-dev.duckdns.org:8080/"><code>JOIN GAME</code></a>
-        </p>
-
-        {list} 
-      
-      
-        
+        <br />
+        <ButtonStart />
+        <br />
+        <br />
+        <ButtonJoin />
+        {list}
       </div>
     )
   }
