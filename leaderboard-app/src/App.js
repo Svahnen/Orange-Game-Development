@@ -42,13 +42,7 @@ class App extends Component {
 
   render() {
 
-
-
-/////////////////////////////////////////////////
-
-
-
-    // Sorts array elements in decending order numerically.  
+    // Sort function of array.time
     function CompareForSort(first, second) {
       let firstTime = first.time
       let secondTime = second.time
@@ -60,15 +54,7 @@ class App extends Component {
         return 1;
     } 
 
-
-
-////////////////////////////////////////////////
-
-
-
-    console.log(fakeServerData.team)
-
-
+    // Sorts and then maps server data
     let list = fakeServerData.team.sort(CompareForSort).map(team => {
       return(
         <div key={team.ID} className="Table">
@@ -89,6 +75,7 @@ class App extends Component {
         <p className="App-intro">
           <a href="https://orange-dev.duckdns.org:8080/"><code>JOIN GAME</code></a>
         </p>
+        
         {list} 
       
       
