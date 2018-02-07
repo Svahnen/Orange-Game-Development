@@ -6,28 +6,28 @@ import './App.css'
 let fakeServerData = {
   team: [
     {
-      name: 'Team Orange',
-      time: '12:15',
+      time: 1215,
+      name: 'Team Strawberry',
       ID: '1'
     },
     {
+      time: 1725,
       name: 'Team Pear',
-      time: '15:25',
       ID: '2'
     },
     {
+      time: 1615,
       name: 'Team Melon',
-      time: '16:15',
       ID: '3'
     },
     {
+      time: 1744,
       name: 'Team Grape',
-      time: '17:44',
       ID: '4'
     },
     {
+      time: 2515,
       name: 'Team Banana',
-      time: '25:15',
       ID: '5'
     }
   ]
@@ -43,15 +43,38 @@ class App extends Component {
   render() {
 
 
-    // Run throu the fakeServerData object and map out the data in a div. 
-    // Would like to have this in a function to keep render cleaner.
-    const list = fakeServerData.team.map(team => {
+
+/////////////////////////////////////////////////
+
+
+
+    // Sorts array elements in decending order numerically.  
+    function CompareForSort(first, second) {
+      let firstTime = first.time
+      let secondTime = second.time
+      if (firstTime == secondTime)
+        return 0;
+      if (firstTime < secondTime)
+        return -1;
+      else
+        return 1;
+    } 
+
+
+
+////////////////////////////////////////////////
+
+
+
+    console.log(fakeServerData.team)
+
+
+    let list = fakeServerData.team.sort(CompareForSort).map(team => {
       return(
         <div key={team.ID} className="Table">
         <h1>{team.ID}</h1> <h2>{team.time}</h2> <p>{team.name}</p> 
         </div>
       )
-    
     })
 
     return (
@@ -67,6 +90,7 @@ class App extends Component {
           <a href="https://orange-dev.duckdns.org:8080/"><code>JOIN GAME</code></a>
         </p>
         {list} 
+      
       
         
       </div>
