@@ -1,17 +1,8 @@
 main {
-  min-width: 400px;
+  max-width: 400px;
+  height: 100%;
+  margin: 0 auto;
 }
-
-/* .toppart {
-  position: absolute;
-  top: 150px;
-}
-
- .bottompart {
-  position: absolute;
-  bottom: 145px;
-  width: 400px;
-} */
 
 .backgroundimg {
   background-image: url('images/map.png');
@@ -21,42 +12,18 @@ main {
   background-size: cover;
 }
 
-.title {
-  max-height: 200px;
-}
-
-/* .imgpos {
-  position: absolute;
-  top: 100px;
-  left: 50px;
-} */
-
-.bomb {
-  height: 350px;
-  /* top: 150px;
-   left: 130px; */
-}
-
-.player {
-  height: 400px;
-  /* top: 80px; */
-}
-
-.img
-{
-  display: inline-block;
-  width: 600px;
-  height: 600px;
+.relative {
   position: relative;
-  background-image: url(images/bomb.png);
-  background-repeat: no-repeat;
 }
-.img:after
-{
-  content: '';
-  display: inline-block;
+
+.absolute {
   position: absolute;
-  background: url(images/player1.png) no-repeat;
-  width: 600px;
-  height: 700px;
+  bottom: -60px;
+  left: 100px;
+}
+
+.img {
+  width: 365px;
+  left: 0;
+  padding-top: 15px;
 }
