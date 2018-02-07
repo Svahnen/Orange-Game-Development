@@ -53,7 +53,8 @@ class App extends Component {
       else
         return 1;
     } 
-
+  
+    // Convert second to minutes and add :
     function fmtMSS(s){return(s-(s%=60))/60+(9<s?':':':0')+s}
 
     // Sorts and then maps server data
