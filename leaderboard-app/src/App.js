@@ -55,13 +55,13 @@ class App extends Component {
     } 
   
     // Convert second to minutes and add :
-    function fmtMSS(s){return(s-(s%=60))/60+(9<s?':':':0')+s}
+    function convertToMin(s){return(s-(s%=60))/60+(9<s?':':':0')+s}
 
     // Sorts and then maps server data
     let list = fakeServerData.team.sort(CompareForSort).map(team => {
       return(
         <div key={team.ID} className="Table">
-          <h1>{team.ID}</h1> <h2>{fmtMSS(team.time)}</h2> <p>{team.name}</p> 
+          <h1>{team.ID}</h1> <h2>{convertToMin(team.time)}</h2> <p>{team.name}</p> 
         </div>
       )
     })
