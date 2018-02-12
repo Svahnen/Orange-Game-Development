@@ -2,6 +2,12 @@ import React, { Component } from 'react'
 import bomb from './bomb.png'
 import './App.css'
 import List from './List.js'
+import ButtonStart from './ButtonStart'
+
+
+
+
+
 
 
 
@@ -16,16 +22,9 @@ class App extends Component {
           {/* <img src={bomb} className="App-logo" alt="logo" /> */}
           <h1 className="App-title">SURVIVAL {<img src={bomb} className="App-logo" alt="logo" />}F THE FASTEST</h1>
         </header>
-        <p className="App-intro">
-          <a href="https://orange-dev.duckdns.org:8080/"><code>START GAME</code></a>
-        </p>
-        <p className="App-intro">
-          <a href="https://orange-dev.duckdns.org:8080/"><code>JOIN GAME</code></a>
-        </p>
-
+        <br />
+        <ButtonStart />
         <List />
-      
-        
       </div>
     )
   }

@@ -11,7 +11,7 @@
   background-color: #4cb1ba;
   height: 100px;
   padding: 20px;
-  color: black;
+  color: #FFFFFF;
 }
 
 .App-title {
@@ -24,12 +24,52 @@
 
 .Table {
   border: 1px solid black;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 5%;
+  margin: 2%;
 }
+
+button {
+  position: relative;
+  background-color: #4cb1ba;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
 
 
 
