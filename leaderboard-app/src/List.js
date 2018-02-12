@@ -32,18 +32,16 @@ componentWillMount(){
         .then(data => {
 
         this.setState({teams: data})
-        console.log(data)
+
         })
 }
-
-
 
     render() {
 
         // Sorts and then maps server data
-        let list = this.state.teams.sort(CompareForSort).map(team => {
+        let list = this.state.teams.sort(CompareForSort).map((team, index) => {
             return (
-                <div key={team.ID} className="Table">
+                <div key={index} className="Table">
                     <h3>{team.name}</h3> <h2>{convertToMin(team.time)}</h2>
                 </div>
             )
