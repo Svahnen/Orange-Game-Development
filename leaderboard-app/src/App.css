@@ -24,7 +24,7 @@
 
 .Table {
   border: 1px solid black;
-  border-radius: 30px;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -37,7 +37,7 @@ button {
   position: relative;
   background-color: #4cb1ba;
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
   font-size: 20px;
   color: #FFFFFF;
   padding: 20px;

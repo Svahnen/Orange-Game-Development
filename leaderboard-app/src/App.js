@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import bomb from './bomb.png'
 import './App.css'
 import ButtonStart from './ButtonStart'
-import ButtonJoin from './ButtonJoin'
 
 
 let fakeServerData = {
@@ -34,27 +33,27 @@ let fakeServerData = {
     },
     {
       time: 1115,
-      name: 'Team Strawberry',
+      name: 'Team Orange',
       ID: '6'
     },
     {
       time: 2725,
-      name: 'Team Pear',
+      name: 'Team Ninjas',
       ID: '7'
     },
     {
       time: 1635,
-      name: 'Team Melon',
+      name: 'Team Alex',
       ID: '8'
     },
     {
       time: 1744,
-      name: 'Team Grape',
+      name: 'Team JSON',
       ID: '9'
     },
     {
       time: 2515,
-      name: 'Team Banana',
+      name: 'Team LOL',
       ID: '10'
     }
   ]
@@ -100,9 +99,6 @@ class App extends Component {
         </header>
         <br />
         <ButtonStart />
-        <br />
-        <br />
-        <ButtonJoin />
         {list}
       </div>
     )
