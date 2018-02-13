@@ -1,0 +1,29 @@
+main {
+  max-width: 400px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.backgroundimg {
+  background-image: url('images/map.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  bottom: -60px;
+  left: 100px;
+}
+
+.img {
+  width: 365px;
+  left: 0;
+  padding-top: 15px;
+}
