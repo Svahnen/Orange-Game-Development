@@ -27,7 +27,7 @@ class List extends Component {
     }
 
 componentWillMount(){
-    fetch('http://localhost:3000/getteams')
+    fetch('http://orange-dev.duckdns.org:3000/getteams')
         .then((res) => res.json())
         .then(data => {
 
