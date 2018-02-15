@@ -6,21 +6,13 @@ import ButtonStart from './ButtonStart'
 
 
 
-
-
-
-
-
 class App extends Component {
-
-  render() {
-
-
+  render () {
     return (
-      <div className="App">
-        <header className="App-header shine">
+      <div className='App'>
+        <header className='App-header shine'>
           {/* <img src={bomb} className="App-logo" alt="logo" /> */}
-          <h1 className="App-title">SURVIVAL {<img src={bomb} className="App-logo" alt="logo" />}F THE FASTEST</h1>
+          <h1 className='App-title'>SURVIVAL {<img src={bomb} className='App-logo' alt='logo' />}F THE FASTEST</h1>
         </header>
         <br />
         <ButtonStart />
@@ -30,4 +22,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App
