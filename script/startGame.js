@@ -2,7 +2,7 @@
 /* eslint no-unused-vars: 0 */
 /* eslint-env browser */
 
-const serverIp = 'http://10.7.2.168:3000'
+const serverIp = 'http://orange-dev.duckdns.org:3000'
 
 let createNewGame = function () {
   console.log('Started')
