@@ -5,15 +5,15 @@
 const serverIp = 'http://orange-dev.duckdns.org:3000'
 
 let createNewGame = function () {
-  console.log('Started')
-
   fetch(serverIp + '/startgame/' + teamName() + '/' + timeNow(), {
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Content-Type': 'text/plain'
     }
   })
-  setTimeout(() => console.log('Done'), 1000)
+  setTimeout(() => {
+    window.location.href = 'https://orange-dev.duckdns.org:8080'
+  }, 1000)
 }
 
 // Get local time and add 30 min
