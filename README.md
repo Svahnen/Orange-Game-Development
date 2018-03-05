@@ -70,6 +70,10 @@ npm build
 
 * [Github](http://github.com)
 
+## Other Links
+
+* [Trello](https://trello.com/b/nIYAm6OR/team-orange)
+
 ## Authors
 
 * [Alexandra Sigurdardottir](https://github.com/Alexosk)
