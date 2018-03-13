@@ -24,13 +24,13 @@ To push up to the Live master:
 git add .
 git commit -m ”Commit message”
 git push live master
-Lösenord: *******
+Password: *******
 ```
 ##### To pull from the live server:
 ```
 To retrieve from the Live Server:
 git pull live master
-Lösenord: *******
+Password: *******
 ```
 
 *Note: Only push to live master when pushing to regular master.*
